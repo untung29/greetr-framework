@@ -1,5 +1,6 @@
-var g = G$("John", "Doe");
 // g.greet().setLang("es").greet(true).log();
+var g = G$("John", "Doe");
+
 $("#login").click(function () {
-  g.HTMLGreeting($("#greeting"), true);
+  g.setLang($("#lang").val()).HTMLGreeting($("#greeting"), true).log();
 });

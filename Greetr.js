@@ -1,4 +1,4 @@
-(function (global, $) {
+;(function (global, $) {
   var Greetr = function (firstName, lastName, language) {
     // Create a new object with Greetr.init
     return new Greetr.init(firstName, lastName, language);
@@ -100,6 +100,8 @@
     self.firstName = firstName || "";
     self.lastName = lastName || "";
     self.language = language || "en";
+
+    self.validate();
   };
 
   // Be able to set any props and methods in Greetr.prototype instead of Greetr.init
